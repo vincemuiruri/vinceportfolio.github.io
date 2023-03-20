@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Personal Portfolio Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/58540d963d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" width="100" height="50">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <i class="fa-duotone fa-browser"></i>
+                <p>Web Designer</p>
+                <h1> HI,<br>I'm <span>Vincent Muiruri</span><br><h6>Kenya</h6></h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------about------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic1.png">
+                </div>
+                
+                <div class="about-col-2>">
+                   <h1 class="sub-title"> About Me</h1>
+                  <p>I am an Information Technology professional with adverse website designing experience<br>
+                    experience I have created computer applications such as point of sale applications and<br>
+                     hospital data entry application.Web designing has been one of my favourite skills and i've<br>
+                     been able to create website portfolio such as this.I possess organisational, designing and<br>
+                    artistic skills among others.
+                 </p> 
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">experience</p>
+                    <p class="tab-links" onclick="opentab('education')">education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Develpment</span><br>Building Android apps</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents " id="experience">
+                    <ul>
+                        <li><span>2021</span><br>Information and communication technology(ICDL) at Daystar</li>
+                        <li><span>2022</span><br>HTML,CSS and JS from Sololearn</li>
+                        <li><span>2022</span><br>Web development from Easy Tutorials Pro</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - current</span><br>Bachelor of Information Technology</li>
+                        <li><span>2022-current</span><br>Web Development</li>
+                        <li><span>2022</span><br>HTML,CSS and Java Script </li>
+                        <li><span>2021</span><br>ICDL @Daystar University</li>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------services------- -->
+    <div id="services">
+      </div>
+      <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I offer web design for both personal portfolios and company websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>I deal with the overall feel of the product, very particular about how your website is laid out. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>I create applications for your various business needs.i.e Hospital data entry apps etc.</p>
+                <a href="#">Learn more</a>
+
+        </div>
+    </div>
+<!-------portfolio------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list" display:inline-block;>
+            <div class="work">
+                <img src="hosp app.png" style="width:50%">
+                 <div class="layer">
+                    <h3>Hospital Entry App</h3>
+                    <p>I have created a hospital application that is able to input,update and delete hospital data such as patien,doctor and drugs information.</p>
+                 </div>
+            </div>
+        </div>
+        <div class="work">
+           <img src="student report.png" style="width:50%">
+            <div class="layer">
+                <h3>Marks Record App</h3>
+            <p>I have created a staff-friendly application that allows input of marks by a teacher into a students database report.
+            It can also input a student's grade automatically displaying their grade after inputting the marks.
+           </p>
+        </div>
+        
+    </div>
+</div>
+<!------hobbies------>
+<div class="about-col-2>">
+    <h1 class="sub-title"> My Hobbies</h1>
+    <div class="container">
+        <div class="image">
+            <img src="cycling.jpg" alt="cycling"width="500" height="333" usemap="#workmap">
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://billbonebikelaw.com/news-from-the-road/12-fun-facts-cycling/">
+            </map>
+        </div>
+        <div class="text">
+            <span><p><i><b>Click on the bike's handles for facts about cycling</b> </i><br>There are around 1 billion bikes across the world, making cycling one of the most popular outdoor activities.
+                Bikes are made for people of all ages, abilities, shapes and sizes.Cycling has been
+                scientifically proven to lift your mood, just ten minutes of cycling is enough to make  me feel a little happier.
+              </p> </span>
+        </div>
+      
+   
+        
+    </div>
+
+   
+</div>
+
+
+
+<!-----contact----->
+<div id="contact">
+   <div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>vincemuiruri9@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>0717748645</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/vi.nce78/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div> 
+            <a href="images/CV-Vincent.docx"download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right"></div>
+        
+        
+    </div>
+   </div> 
+   <div class="copyright">
+    <marquee><p>copyright ©2023 Vince Muiruri.All rights reserved. </p></marquee>
+   </div>
+</div>
+
+
+</body>
+</html>
